@@ -1,0 +1,168 @@
+
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Запис на прийом — Друзі Тварин</title>
+
+    <meta name="description"
+          content="Форма запису на прийом до ветеринарної клініки Друзі Тварин у Конотопі.">
+
+    <meta name="keywords"
+          content="запис до ветеринара, Конотоп, ветеринарна клініка">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <ul class="menu">
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="about.html">Про нас</a></li>
+                <li><a href="main2.html">Послуги</a></li>
+                <li><a href="contacts.html">Контакти</a></li>
+                <li><a href="recording.html">Записатись</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <aside class="indicator">
+        <ol>
+            <li><a href="index.html">1</a></li>
+            <li><a href="about.html">2</a></li>
+            <li><a href="contacts.html">3</a></li>
+        </ol>
+    </aside>
+
+    <main>
+
+        <section class="appointment">
+            <h1>Запис на прийом</h1>
+
+            <p>
+                Заповніть форму нижче, щоб обрати
+                бажану дату та послугу для вашого улюбленця.
+            </p>
+
+            <form action="#" method="get">
+
+                <label for="owner-name">
+                    Ваше ім'я:
+                </label>
+                <input
+                    type="text"
+                    id="owner-name"
+                    name="owner_name"
+                    placeholder="Введіть ваше ім'я"
+                    required
+                >
+
+                <label for="phone">
+                    Номер телефону:
+                </label>
+                <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    placeholder="+380XXXXXXXXX"
+                    required
+                >
+
+                <label for="pet-name">
+                    Ім'я тварини:
+                </label>
+                <input
+                    type="text"
+                    id="pet-name"
+                    name="pet_name"
+                    placeholder="Наприклад, Барсик"
+                    required
+                >
+
+                <label for="pet-type">
+                    Вид тварини:
+                </label>
+                <select id="pet-type" name="pet_type" required>
+                    <option value="">Оберіть вид тварини</option>
+                    <option value="cat">Кіт</option>
+                    <option value="dog">Собака</option>
+                    <option value="rabbit">Кролик</option>
+                    <option value="other">Інша тварина</option>
+                </select>
+
+                <label for="service">
+                    Оберіть послугу:
+                </label>
+                <select id="service" name="service" required>
+                    <option value="">Оберіть послугу</option>
+                    <option value="therapy">Терапія</option>
+                    <option value="surgery">Хірургія</option>
+                    <option value="dentistry">Стоматологія</option>
+                    <option value="vaccination">Вакцинація</option>
+                    <option value="diagnostics">Діагностика</option>
+                </select>
+
+                <label for="date">
+                    Бажана дата прийому:
+                </label>
+                <input
+                    type="date"
+                    id="date"
+                    name="date"
+                    required
+                >
+
+                <label for="message">
+                    Додаткова інформація:
+                </label>
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Опишіть причину звернення"
+                ></textarea>
+
+                <button type="submit">
+                    Записатись
+                </button>
+
+            </form>
+        </section>
+
+        <section>
+            <h2>Чому варто звернутися до нас?</h2>
+
+            <ul>
+                <li>Турбота про домашніх улюбленців</li>
+                <li>Широкий перелік ветеринарних послуг</li>
+                <li>Зручна форма запису</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Потрібна додаткова інформація?</h2>
+
+            <p>
+                Перегляньте сторінку контактів
+                або дізнайтеся більше про наші послуги.
+            </p>
+
+            <a href="contacts.html">Контакти</a>
+            |
+            <a href="main2.html">Наші послуги</a>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>м. Конотоп, Сумська область</p>
+        <p> 2026 Друзі Тварин</p>
+    </footer>
+
+</body>
+</html>
